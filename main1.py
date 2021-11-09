@@ -95,9 +95,9 @@ st.markdown(
 def main():
 
     st.title(" ------------>Jobshie<--------------")
-    st.subheader("Copy the full job description and paste it here:")
+    st.subheader("Copy the full job description and paste it down below:")
     sel_col, disp_col = st.columns(2)
-    job_description = sel_col.text_input('','Job description')                                                                                                                ')
+    job_description = st.text_input('','''-----------------------Copy the full job description and paste it here-----------------------''')                                                                                                              ')
 
 
     st.subheader("Upload your resume or CV down below:")
