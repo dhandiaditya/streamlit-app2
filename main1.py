@@ -94,15 +94,15 @@ st.markdown(
 
 def main():
 
-    st.title(" ------------>Jobshie<--------------")
+    st.title(" --->Jobshie<---")
     st.subheader("Copy the full job description and paste it down below:")
     sel_col, disp_col = st.columns(2)
-    job_description = st.text_input('','''-----------------------Copy the full job description and paste it here-----------------------''')         
+    job_description = st.text_input('Copy the full job description and paste it down below:','''                                                            ''')         
 
 
     st.subheader("Upload your resume or CV down below:")
     docx_file = st.file_uploader("Upload File",type=['txt','docx','pdf'])
-    if st.button("-------------->SHOW ME THE RESULTS<-----------------"):
+    if st.button("--->SHOW ME THE RESULTS<---"):
         if docx_file is not None:
             file_details = {"Filename":docx_file.name,"FileType":docx_file.type,"FileSize":docx_file.size}
             #st.write(file_details)
