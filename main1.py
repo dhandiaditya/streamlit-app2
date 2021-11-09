@@ -97,7 +97,7 @@ def main():
     st.title(" --->Jobshie<---")
     st.subheader("Copy the full job description and paste it down below:")
     sel_col, disp_col = st.columns(2)
-    job_description = st.text_input('Copy the full job description and paste it down below:','''                                                            ''')         
+    job_description = st.text_input('','''                                                  Paste full job description here                                                                                   ''')         
 
 
     st.subheader("Upload your resume or CV down below:")
