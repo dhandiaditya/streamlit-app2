@@ -94,15 +94,15 @@ st.markdown(
 
 def main():
 
-    st.title("                                 Jobshie.com")
+    st.title(" ------------>Jobshie<--------------")
     st.subheader("Copy the full job description and paste it here:")
     sel_col, disp_col = st.columns(2)
-    job_description = sel_col.text_input('','Job Description                                                                                                                  ')
+    job_description = sel_col.text_input('','''-----------------------Copy the full job description and paste it here-----------------------''')                                                                                                                ')
 
 
     st.subheader("Upload your resume or CV down below:")
     docx_file = st.file_uploader("Upload File",type=['txt','docx','pdf'])
-    if st.button("--------------------->SHOW ME THE RESULTS<-------------------"):
+    if st.button("-------------->SHOW ME THE RESULTS<-----------------"):
         if docx_file is not None:
             file_details = {"Filename":docx_file.name,"FileType":docx_file.type,"FileSize":docx_file.size}
             #st.write(file_details)
@@ -204,7 +204,7 @@ def main():
             mached = "Your resume is " + str(matched_percentage) + "% mached with the job description."
             
             st.subheader(mached)
-	    st.subheader("If you got less percentage, don't worry about. Contact us on contact.jobshie@gmail.com. We will provide you full resume building guidence and hold your hand till you got your dream job. Contact us now on contact.jobshie@gmail.com  ")
+	    
 
             text1 = job_description1
             # Create some sample text
@@ -227,6 +227,15 @@ def main():
             plt.axis("off")
             plt.show()
             st.pyplot()
+		
+            
+            st.subheader("Got less percentage?, don't worry about it.")
+
+            st.subheader("Contact us at contact.jobshie@gmail.com.")
+
+            st.subheader("We will provide you the full resume building guidance and hold your hand till you got your dream job.")
+
+            st.subheader("Contact us now at contact.jobshie@gmail.com")
 
             
 
